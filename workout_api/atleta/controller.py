@@ -5,8 +5,7 @@ import logging
 from fastapi import APIRouter, Body, HTTPException, status, Depends
 from pydantic import UUID4
 
-from fastapi_pagination import LimitOffsetPage, LimitOffsetParams, Page
-#from sqlalchemy import select
+from fastapi_pagination import LimitOffsetPage, LimitOffsetParams
 from fastapi_pagination.ext.sqlalchemy import paginate
 
 from workout_api.atleta.schemas import AtletaIn, AtletaOut, AtletaUpdate, AtletaSimpleOut
